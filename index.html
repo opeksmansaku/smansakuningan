@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPMB & MPLS SMAN 1 KUNINGAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="img/logompk.png" class="logo" data-info="mpk">
+        <img src="img/logosmansa.png" class="logo sekolah">
+        <img src="img/logoosis.png" class="logo" data-info="osis">
+    </div>
+
+    <h1>SPMB & MPLS 2026</h1>
+    <p>SMAN 1 KUNINGAN</p>
+</header>
+
+<nav>
+    <a href="#profil">Profil</a>
+    <a href="#cp">Contact</a>
+    <a href="#jadwal">Jadwal</a>
+    <a href="#berkas">Berkas</a>
+    <a href="#twibbon">Twibbon</a>
+    <a href="#seragam">Seragam</a>
+    <a href="#eskul">Ekstrakurikuler</a>
+    <a href="#fasilitas">Fasilitas</a>
+</nav>
+
+<section id="profil">
+    <div class="profil-container">
+        <img src="img/sekolah.jpg" class="foto-sekolah">
+        <div class="profil-text">
+            <h2>Profil Sekolah</h2>
+            <p>SMAN 1 Kuningan merupakan SMA Negeri pertama di Kabupaten Kuningan...</p>
+        </div>
+    </div>
+</section>
+
+<section id="cp">
+    <h2>Contact Person</h2>
+    <p>Nomor Panitia SPMB : 08xxxxxxxxxx</p>
+    <p>Nomor SMANSA : 08xxxxxxxxxx</p>
+</section>
+
+<section id="jadwal">
+    <h2>Jadwal SPMB 2026</h2>
+    <table>
+        <tr><th>Kegiatan</th><th>Tanggal</th></tr>
+        <tr><td>PCMB</td><td>29 Mei - 12 Juni 2026</td></tr>
+        <tr><td>Tahap 1</td><td>15 Juni - 29 Juni 2026</td></tr>
+        <tr><td>Pengumuman Tahap 1</td><td>24 Juni 2026</td></tr>
+        <tr><td>Daftar Ulang Tahap 1</td><td>26 - 29 Juni 2026</td></tr>
+        <tr><td>Tahap 2</td><td>30 Juni - 14 Juli 2026</td></tr>
+        <tr><td>Pengumuman Tahap 2</td><td>10 Juli 2026</td></tr>
+        <tr><td>Daftar Ulang Tahap 2</td><td>13 - 14 Juli 2026</td></tr>
+    </table>
+</section>
+
+<section id="berkas">
+    <h2>Persyaratan Berkas Tahap 1</h2>
+    <ul>
+        <li>Fotokopi KK</li>
+        <li>Fotokopi Akta Kelahiran</li>
+        <li>Pas Foto</li>
+        <li>Surat Kelulusan</li>
+    </ul>
+</section>
+
+<section id="twibbon">
+    <h2>Link Twibbon</h2>
+    <a href="#">Klik Disini Untuk Twibbon</a>
+</section>
+
+<section id="seragam">
+    <h2>Seragam SMAN 1 Kuningan</h2>
+    <ul class="list-klik">
+        <li data-gallery='["img/seragam-sekolah1.jpg","img/seragam-senin2.jpg","img/seragam-senin3.jpg"]'>Senin-Selasa : Putih Abu</li>
+        <li data-gallery='["img/seragam-pramuka1.jpg","img/seragam-pramuka2.jpg","img/seragam-pramuka3.jpg"]'>Rabu : Pramuka</li>
+        <li data-gallery='["img/seragam-batik1.jpg","img/seragam-batik2.jpg","img/seragam-batik3.jpg"]'>Kamis : Batik</li>
+        <li data-gallery='["img/seragam-olahraga1.jpg","img/seragam-olahraga2.jpg","img/seragam-olahraga3.jpg"]'>Jumat : Olahraga</li>
+    </ul>
+</section>
+
+<section id="eskul">
+    <h2>Organisasi & Ekstrakurikuler</h2>
+
+    <div class="eskul-container">
+        <div class="kategori-eskul">
+            <h3>Organisasi</h3>
+            <ul>
+                <li data-img="img/fotoosis.jpeg">OSIS</li>
+                <li data-img="img/foto-mpk.jpg">MPK</li>
+                <li data-img="img/foto-pramuka.jpeg">Pramuka</li>
+            </ul>
+        </div>
+
+        <div class="kategori-eskul">
+            <h3>Olahraga</h3>
+            <ul>
+                <li data-img="img/foto-basket.jpg">Basket</li>
+                <li data-img="img/foto-futsal.jpg">Futsal</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="fasilitas">
+    <h2>Fasilitas</h2>
+    <ul class="list-klik">
+        <li data-img="img/fasilitas-lab.jpg">Laboratorium Komputer</li>
+        <li data-img="img/fasilitas-perpus.jpg">Perpustakaan</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 SMAN 1 Kuningan</p>
+</footer>
+
+<!-- MODAL FOTO -->
+<div id="modal-foto" class="modal">
+    <span class="close">&times;</span>
+    <a class="panah-geser prev">&#10094;</a>
+    <img id="foto-kegiatan" class="modal-content">
+    <a class="panah-geser next">&#10095;</a>
+</div>
+
+<!-- MODAL INFO -->
+<div id="modal-info" class="modal">
+    <div class="modal-text-content">
+        <span class="close-info">&times;</span>
+        <h3 id="info-judul"></h3>
+        <p id="info-deskripsi"></p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
