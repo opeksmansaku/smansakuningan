@@ -462,27 +462,24 @@ footer{
 }
 
 .countdown-container{
-
     display:flex;
     justify-content:center;
-    gap:20px;
+    align-items:center;
+    gap:15px;
     flex-wrap:wrap;
-
 }
 
 .time-box{
+    flex:1 1 90px;
+    max-width:120px;
 
-    width:120px;
     background:#8B0000;
-
     color:white;
 
     border-radius:15px;
-
     padding:20px;
 
     box-shadow:0 8px 20px rgba(0,0,0,.15);
-
 }
 
 .time-box span{
