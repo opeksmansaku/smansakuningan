@@ -176,3 +176,14 @@ document.addEventListener("keydown", (e)=>{
         tutupInfo();
     }
 });
+// =======================
+// LOADING SCREEN
+// =======================
+
+window.addEventListener("load", () => {
+
+    const loading = document.getElementById("loading-screen");
+
+    loading.classList.add("hidden");
+
+});
