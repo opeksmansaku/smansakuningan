@@ -384,6 +384,32 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+.time-box{
+
+    width:70px;
+
+    padding:12px;
+
+}
+
+.time-box span{
+
+    font-size:1.4rem;
+
+}
+
+.time-box small{
+
+    font-size:.75rem;
+
+}
+
+.countdown-container{
+
+    gap:10px;
+
+}
 /* ===========================
    LOADING SCREEN
 =========================== */
@@ -447,46 +473,60 @@ footer{
     }
 }
 /* ===========================
-   COUNTDOWN MPLS
+   COUNTDOWN HEADER
 =========================== */
 
 #countdown{
-    max-width:1100px;
-    margin:30px auto;
-    text-align:center;
+
+    margin-top:40px;
+
 }
 
-#countdown h2{
-    color:#8B0000;
-    margin-bottom:25px;
+#countdown h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:1.3rem;
+
+    letter-spacing:1px;
+
 }
 
 .countdown-container{
+
     display:flex;
+
     justify-content:center;
-    align-items:center;
+
     gap:15px;
+
     flex-wrap:wrap;
+
 }
 
 .time-box{
-    flex:1 1 90px;
-    max-width:120px;
 
-    background:#8B0000;
-    color:white;
+    background:white;
+
+    color:#8B0000;
 
     border-radius:15px;
-    padding:20px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    width:95px;
+
+    padding:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
 }
 
 .time-box span{
 
     display:block;
 
-    font-size:2.4rem;
+    font-size:2rem;
 
     font-weight:bold;
 
@@ -494,38 +534,18 @@ footer{
 
 .time-box small{
 
-    font-size:.95rem;
+    font-size:.9rem;
 
-    opacity:.9;
+    color:#666;
 
 }
 
 #status-mpls{
 
-    margin-top:25px;
+    margin-top:20px;
 
-    font-size:1.2rem;
+    color:white;
 
     font-weight:600;
-
-    color:#C62828;
-
-}
-
-@media(max-width:768px){
-
-.time-box{
-
-    width:80px;
-
-    padding:15px;
-
-}
-
-.time-box span{
-
-    font-size:1.7rem;
-
-}
 
 }
