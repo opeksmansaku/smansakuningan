@@ -37,8 +37,18 @@ function gantiFoto(dir) {
     if (indeksFotoSaatIni >= galeriSaatIni.length) indeksFotoSaatIni = 0;
     if (indeksFotoSaatIni < 0) indeksFotoSaatIni = galeriSaatIni.length - 1;
 
-    document.getElementById("foto-kegiatan").src =
-        galeriSaatIni[indeksFotoSaatIni];
+    const img = document.getElementById("foto-kegiatan");
+
+img.style.opacity = "0";
+
+setTimeout(() => {
+    img.src = galeriSaatIni[indeksFotoSaatIni];
+
+    img.onload = () => {
+        img.style.opacity = "1";
+    };
+
+}, 200);
 }
 
 function tutupFoto() {
