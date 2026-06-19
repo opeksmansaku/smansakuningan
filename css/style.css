@@ -120,6 +120,11 @@ section h2{
     flex:1;
 }
 
+.profil-text p{
+    text-align: justify;
+    line-height: 1.8;
+}
+
 /* LIST & KLIK EFEK */
 ul{
     list-style:none;
