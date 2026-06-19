@@ -220,8 +220,11 @@ tr:nth-child(even){
     width: 85%;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
-    animation: muncul 0.3s ease;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    animation: muncul .3s ease;
+
+    opacity: 1;
+    transition: opacity .3s ease;
 }
 
 /* SETUP DINAMIS RASIO FOTO */
