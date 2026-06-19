@@ -15,6 +15,17 @@ function bukaModalFoto(galeri, rasio = "16-9") {
     img.src = galeriSaatIni[0];
     modal.style.display = "flex";
 
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+if (galeri.length > 1) {
+    prev.style.display = "block";
+    next.style.display = "block";
+} else {
+    prev.style.display = "none";
+    next.style.display = "none";
+}
+
     document.body.classList.add("no-scroll");
 
     img.className = "modal-content rasio-" + rasio;
@@ -50,13 +61,15 @@ const infoData = {
     }
 };
 
-function bukaInfo(key) {
-    const modal = document.getElementById("modal-info");
+function bukaInfo(key){
+    const data = infoData[key];
 
-    document.getElementById("info-judul").innerText = infoData[key].judul;
-    document.getElementById("info-deskripsi").innerText = infoData[key].deskripsi;
+    if(!data) return;
 
-    modal.style.display = "flex";
+    document.getElementById("info-judul").innerText = data.judul;
+    document.getElementById("info-deskripsi").innerText = data.deskripsi;
+
+    document.getElementById("modal-info").style.display="flex";
     document.body.classList.add("no-scroll");
 }
 
@@ -99,11 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".prev").onclick = () => gantiFoto(-1);
     document.querySelector(".next").onclick = () => gantiFoto(1);
 });
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
+
         if (entry.isIntersecting) {
+
             entry.target.classList.add("muncul");
+
+            observer.unobserve(entry.target);
+
         }
+
     });
 });
 
