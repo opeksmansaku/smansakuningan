@@ -130,3 +130,14 @@ gambar.addEventListener("touchend", (e) => {
         gantiFoto(-1);
     }
 });
+document.getElementById("modal-foto").addEventListener("click", function(e){
+    if(e.target === this){
+        tutupFoto();
+    }
+});
+
+document.getElementById("modal-info").addEventListener("click", function(e){
+    if(e.target === this){
+        tutupInfo();
+    }
+});
