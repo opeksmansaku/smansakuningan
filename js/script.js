@@ -187,3 +187,50 @@ window.addEventListener("load", () => {
     loading.classList.add("hidden");
 
 });
+// =======================
+// COUNTDOWN MPLS
+// =======================
+
+// Ganti sesuai hari pertama MPLS
+const tanggalMPLS = new Date("July 15, 2026 07:00:00").getTime();
+
+const hitungCountdown = () => {
+
+    const sekarang = new Date().getTime();
+
+    const selisih = tanggalMPLS - sekarang;
+
+    if(selisih <= 0){
+
+        document.getElementById("status-mpls").innerHTML =
+        "🎉 Selamat Datang Peserta MPLS 2026!";
+
+        document.getElementById("hari").innerHTML="00";
+        document.getElementById("jam").innerHTML="00";
+        document.getElementById("menit").innerHTML="00";
+        document.getElementById("detik").innerHTML="00";
+
+        clearInterval(timer);
+
+        return;
+
+    }
+
+    const hari = Math.floor(selisih/(1000*60*60*24));
+
+    const jam = Math.floor((selisih%(1000*60*60*24))/(1000*60*60));
+
+    const menit = Math.floor((selisih%(1000*60*60))/(1000*60));
+
+    const detik = Math.floor((selisih%(1000*60))/1000);
+
+    document.getElementById("hari").innerHTML = hari;
+    document.getElementById("jam").innerHTML = jam;
+    document.getElementById("menit").innerHTML = menit;
+    document.getElementById("detik").innerHTML = detik;
+
+}
+
+hitungCountdown();
+
+const timer = setInterval(hitungCountdown,1000);
