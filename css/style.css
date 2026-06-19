@@ -52,7 +52,7 @@ header p{
     transition:0.3s;
 }
 
-.logo[onclick] {
+.logo[data-info]{
     cursor: pointer;
 }
 
