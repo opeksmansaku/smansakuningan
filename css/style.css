@@ -446,3 +446,89 @@ footer{
         transform:rotate(360deg);
     }
 }
+/* ===========================
+   COUNTDOWN MPLS
+=========================== */
+
+#countdown{
+    max-width:1100px;
+    margin:30px auto;
+    text-align:center;
+}
+
+#countdown h2{
+    color:#8B0000;
+    margin-bottom:25px;
+}
+
+.countdown-container{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.time-box{
+
+    width:120px;
+    background:#8B0000;
+
+    color:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:2.4rem;
+
+    font-weight:bold;
+
+}
+
+.time-box small{
+
+    font-size:.95rem;
+
+    opacity:.9;
+
+}
+
+#status-mpls{
+
+    margin-top:25px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    color:#C62828;
+
+}
+
+@media(max-width:768px){
+
+.time-box{
+
+    width:80px;
+
+    padding:15px;
+
+}
+
+.time-box span{
+
+    font-size:1.7rem;
+
+}
+
+}
