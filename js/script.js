@@ -141,3 +141,9 @@ document.getElementById("modal-info").addEventListener("click", function(e){
         tutupInfo();
     }
 });
+document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape"){
+        tutupFoto();
+        tutupInfo();
+    }
+});
