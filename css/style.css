@@ -736,3 +736,55 @@ footer{
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
 }
+/* ===========================
+   KATALOG SERAGAM (SWIPE)
+=========================== */
+.katalog-seragam {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 15px;
+    
+    /* Menyembunyikan scrollbar agar rapi */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.katalog-seragam::-webkit-scrollbar {
+    display: none;
+}
+
+.kartu-seragam {
+    min-width: 160px; /* Lebar masing-masing kotak */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.kartu-seragam:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(139, 0, 0, 0.1);
+}
+
+.kartu-seragam img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Menjaga foto tidak gepeng */
+    display: block;
+}
+
+.kartu-seragam p {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+.kartu-seragam b {
+    color: #8B0000;
+    font-size: 1rem;
+}
