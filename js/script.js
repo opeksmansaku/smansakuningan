@@ -63,11 +63,11 @@ function tutupFoto() {
 const infoData = {
     osis: {
         judul: "OSIS SMAN 1 Kuningan",
-        deskripsi: "OSIS adalah organisasi siswa..."
+        deskripsi: "Eterlumina bermakna cahaya abadi yang menjadi penerang bagi siswa, menyatukan perbedaan dalam satu keluarga besar, serta menegakkan kewibawaan dengan kebersamaan."
     },
     mpk: {
         judul: "MPK SMAN 1 Kuningan",
-        deskripsi: "MPK adalah lembaga legislatif siswa..."
+        deskripsi: "Pranata Swara adalah basis MPK (lembaga legislatif siswa) yang bertugas mengawasi dan membantu OSIS dalam mengerjakan program kerja."
     }
 };
 
