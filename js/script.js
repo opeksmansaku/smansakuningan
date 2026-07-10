@@ -192,7 +192,7 @@ window.addEventListener("load", () => {
 // =======================
 
 // Ganti sesuai hari pertama MPLS
-const tanggalMPLS = new Date("July 15, 2026 06:30:00").getTime();
+const tanggalMPLS = new Date("July 15, 2026 06:00:00").getTime();
 
 const hitungCountdown = () => {
 
